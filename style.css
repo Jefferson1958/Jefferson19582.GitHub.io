@@ -1,3 +1,114 @@
-p {
-color: red;
-  }
+/* CSS Pseudo-elements to provide correct sizing */
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Use the entire Page but don't show a Horizontal Scrollbar */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Use a Sans-serif font */
+html * {
+   font-family: Arial !important;
+}
+
+/* Make sure there's enough space around the content. Oh, and make everything Red  */
+header {
+    color: Red;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 60px;
+}
+
+footer {
+    clear: both;
+    height: 10px;
+}
+
+/* Put a pretty border around the page */
+.pageborder {
+    margin: 10px;
+    border: 2px solid gray;
+    border-radius: 25px;
+}
+
+/* Setup page */
+.main .container {
+    padding: 0 360px 0 30px;
+    overflow: hidden;
+}
+
+/* Left Floating container */
+.content {
+    float: left;
+    width: 100%;
+    background-color: #fff;
+}
+
+/* Right Floating container */
+.sidebar {
+    float: right;
+    margin-right: -330px;
+    width: 300px;
+    background-color: #eee;
+}
+
+/* CSS Magic to provide full hight floating containers */
+.content, .sidebar {
+    padding-bottom: 99999px;
+    margin-bottom: -99999px;
+}
+
+/* Provide adiquite spacing */
+section, aside {
+    padding: 0px 30px
+}
+
+/* Clear floated divs */
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Don't show any space between Elements  */
+ul {
+    margin-top: 0px;
+}
+
+/* Of course my name is Important */
+.headername {
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+/* Give the Phone number enough space */
+.headerphone {
+    padding-top: 5px;
+}
+
+/* Important stuff */
+.contentheader {
+    font-size: 1.1em;
+    font-weight: bolder;
+}
+
+/* Somewhat Important stuff */
+.topicheader {
+    font-weight: bold;
+}
+
+/* Add a break between Elements */
+.sectionbreak {
+    padding-top: 20px;
+}
+
+/* Don't show any space between Elements */
+.notopmargin {
+    margin-top: 0px;
+}
